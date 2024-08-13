@@ -2,18 +2,17 @@
 * EC2 인스턴스, 도커, 데이터베이스는 구성이 된 상태라고 가정함(아래 정보로)<br><br>
 * sudo 권한이 필요한 작업이 있을 수 있음<br><br>
 * EC2 인스턴스<br>
- - 계정명 : ec2-user<br>
- - 호스트 : x.xx.xx.xxx(Public IP OR Public DNS)<br>
- - PEM : my_key_pair.pem
+    계정명 : ec2-user<br>
+    호스트 : x.xx.xx.xxx(Public IP OR Public DNS)<br>
+    PEM : my_key_pair.pem
 <br><br>
 * 도커<br>
- - 컨테이너 이름 : my_container
+  컨테이너 이름 : my_container
 <br><br>
 * 데이터베이스(PostgreSQL)<br>
- - 유저 : postgres<br>
- - 비번 : 1234<br>
- - DB명 : my_db<br>
-
+     유저 : postgres<br>
+     비번 : 1234<br>
+     DB명 : my_db<br>
 ---
 1. DB 백업 쉘스크립트 작성(EC2) - /home/ec2-user/postgres_backup.sh
 
